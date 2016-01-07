@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head lang="en-IE">
+	<meta charset="utf-8">
+	<title>Web Speech API. Interfaces inteligentes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" media="all">
+</head>
+<body>
+	<main role="main">
+		<video id="v" controls preload="metadata">
+			<source src="big-buck-bunny.mp4" type="video/mp4">
+		</video>
+    <div class="rec-status">Recogniser status:<span id="recStatus">not recognising</span></div>
+		<button id="startRecBtn">Grabar</button>
+		<button id="stopRecBtn">Parar grabación</button>
+		<p>Hacer click en grabar para utilizar un comando para el control del vídeo<br>Comandos:</p>
+		<ul>
+			<li id="vidPlay">"video play"</li>
+			<li id="vidStop">"video stop"</li>
+		</ul>
+	</main>
+	<script src="videorec.js" defer></script>
+	<script>
+		var _gaq=[['_setAccount','UA-2046650-1'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
+	</script>
+</body>
+</html>
